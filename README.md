@@ -1,7 +1,8 @@
 ### Wordle Cheat Tool
 
-This is a simple tool to help you cheat at Wordle. It will give you a list of words for you to try based on your input.
+Wordle, the popular daily word game, challenges players to guess a five-letter word within six tries. Each guess provides feedback in the form of colored tiles, indicating when letters are correct and correctly placed, correct but misplaced, or incorrect. This project aims to develop a Wordle cheat tool, a sophisticated command-line application that assists players by suggesting the most strategic words based on the feedback provided after each guess. Utilizing a Trie data structure, this tool will efficiently manage and filter possible words, enhancing the player’s ability to solve puzzles more effectively.
 
+The Wordle cheat tool will be designed to input a sequence of letters and feedback, apply this information to filter out unlikely words.
 ### How to use
 There are two modes that you can use this tool in:
 - pattern mode
@@ -35,7 +36,10 @@ You should see a list of words that match the pattern 'CL___' and contain the le
 For example, [CLANK, CLACK, CLAVE, CLASH, CLOAK, CLASP, CLANG, CLAMP, CLAIM, CLEAT, CLEAR, CLEAN, CLANS, CLASS, CLAMS, CLADS, CLAPS, CLAWS, CLAYS]
 
 ### Implementation details
-This tool builds a Trie data structure from a list of words. The Trie is then used to find words that match the specified pattern and criteria. A special, recursive function is used to find words that match the pattern and criteria. This differs from a standard Trie , somewhat. If the Trie encounters the wildcard symbol "_",  then it will traversal all children of that TrieNode.
+This tool builds a Trie data structure from a list of words. A Trie is a type of tree used primarily for handling sequences of characters/strings. Each node in a Trie represents a single character of a key or string. Each path down the tree may represent a word or part of a word. 
+
+In this case, the Trie is then used to find words that match the specified pattern and criteria. A special, recursive function is used to find words that match the pattern and criteria. This differs from a standard Trie , somewhat. If the Trie encounters the wildcard symbol "_",  then it will traversal all children of that TrieNode.
+
 
 The Trie is populated using the file five-letter-words.txt, which contains over 5000 five-letter words. This file is located in the resources directory. Additionally, a separate file, recent-words.txt, contains a list of words that have appeared in recent Wordle games. This file too is also located in the resources directory.
 
