@@ -3,6 +3,9 @@
 Wordle, the popular daily word game, challenges players to guess a five-letter word within six tries. Each guess provides feedback in the form of colored tiles, indicating when letters are correct and correctly placed, correct but misplaced, or incorrect. This project aims to develop a Wordle cheat tool, a sophisticated command-line application that assists players by suggesting the most strategic words based on the feedback provided after each guess. Utilizing a Trie data structure, this tool will efficiently manage and filter possible words, enhancing the player’s ability to solve puzzles more effectively.
 
 The Wordle cheat tool will be designed to input a sequence of letters and feedback, apply this information to filter out unlikely words.
+
+An unintentionally funny video of my attempting to solve today's puzzle is here: https://youtu.be/JReU0OJo8Os.
+
 ### How to use
 There are two modes that you can use this tool in:
 - pattern mode
